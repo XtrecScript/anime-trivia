@@ -72,6 +72,18 @@
             if (document.getElementById('correct20').checked) {
                 score++;
             }
+            if (score<=5) {
+                document.getElementById("dom").innerHTML = "Tuviste menos de 5 aciertos, realmente no sabes nada del tema, no sè ni para que realizaste la trivia.";
+            }
+            if (score>5) {
+                document.getElementById("dom").innerHTML = "Tuviste mas de 5 aciertos pero menos de 10, podriamos definirte como un Otaku promedio el cual no sabe mucho del tema pero se sabe defender.";
+            }
+            if (score>10) {
+                document.getElementById("dom").innerHTML = "Tuviste mas de 10 aciertos pero menos de 15 aciertos, ciertamente eres una persona que conoce bastante del tema, pero aun asì te falta demasiado para ser el mejor .";
+            }
+            if (score>20) {
+                document.getElementById("dom").innerHTML = "Tuviste mas de 15 aciertos pero menos de 20 aciertos, te felicito, eres una persona experta en el tema Anime, lograste superar las preguntas mas dificiles y solucionarlas todas satisfacctoriamente, ¡Eres el maestro otaku! .";
+            }
             document.getElementById("result").innerHTML = score;
             document.getElementById("result2").innerHTML = score;
             document.getElementById("result3").innerHTML = score;
