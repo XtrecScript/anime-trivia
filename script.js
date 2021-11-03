@@ -6,17 +6,18 @@
         function next(id) {
             document.getElementsByClassName('container')[id - 1].style.display = "none";
             document.getElementsByClassName('container')[id].style.display = "block";
-            
+ 
             //tuve que juntar dos funciones para poder mostrarla luego en el resultado, para que siempre se cargara
             //pero solo al final se mostrara.
+            
+            
             var score = 0;
-
             if (document.getElementById('correct1').checked) {
                 score++;
-            }
+            }   
             if (document.getElementById('correct2').checked) {
                 score++;
-            }
+            }   
             if (document.getElementById('correct3').checked) {
                 score++;
             }
@@ -72,5 +73,8 @@
                 score++;
             }
             document.getElementById("result").innerHTML = score;
+            document.getElementById("result2").innerHTML = score;
+            document.getElementById("result3").innerHTML = score;
+            document.getElementById("result4").innerHTML = score;
         }
         
