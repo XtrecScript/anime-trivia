@@ -1,2 +1,2 @@
 # anime-trivia
-Its a university project (:
+Its a school project d.
