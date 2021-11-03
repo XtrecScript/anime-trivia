@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Trivia Anime</title>
+</head>
+
+<body>    
+    <div class="container">
+        ¡Bienvenido a la Trivia!<br><hr>
+        <br>
+        Esta Trivia tiene como tema principal el Anime y demostrar que tanto sabes de dicho tema.<br>
+        A continuacion te dare algunas recomendaciones antes de empezar:<br>
+        <ul>
+            <li>La trivia esta dividad en 4 niveles los cuales representan el nivel de dificultad en relacion con el tema</li>
+            <li>Cada 5 preguntas avanzaras de nivel y esto aumentara su dificultad</li>
+            <li>Cuanto llegues al final se mostrara como resultado tus aciertos y una pequeña evaluacion segun tus respuestas </li>
+        </ul>
+        ¿Listo para enfrentante a un gran desafio?
+        <button class="next" onclick="next(1)">Empezar!</button>
+    </div>
+    
+    <div class="container">
+        1.¿Quien es el creador de dragon ball?
+        <hr>
+        <input type="radio" name="question1" id="correct1">&nbsp;Akira Toriyama<br>
+        <input type="radio" name="question1">&nbsp;Eiichirō Oda<br>
+        <input type="radio" name="question1">&nbsp;Kentaro Miura<br>
+        <input type="radio" name="question1">&nbsp;Naoki Urasawa<br>
+        <img class="img" src="img/1.jpg">
+        <button class="next" onclick="next(2)">Siguiente</button>
+        <div class="niveles">
+            NIVEL 1
+        </div>
+    </div>
+
+    <div class="container">
+        2.¿Quien es este personaje?
+        <hr>
+        <input type="radio" name="question2">&nbsp;Goku<br>
+        <input type="radio" name="question2" id="correct2">&nbsp;Luffy<br>
+        <input type="radio" name="question2">&nbsp;Light<br>
+        <input type="radio" name="question2">&nbsp;Naoto<br>
+        <img class="img" src="img/2.jpg">
+        <button class="next" onclick="next(3)">Siguiente</button>
+        <div class="niveles">
+            NIVEL 1
+        </div>
+    </div>
+
+    <div class="container">
+        3.¿Cual es el apellido de Edward en full metal alchemist?
+        <hr>
+        <input type="radio" name="question3">&nbsp;Elrond<br>
+        <input type="radio" name="question3">&nbsp;Edmond<br>
+        <input type="radio" name="question3">&nbsp;Elmac<br>
+        <input type="radio" name="question3" id="correct3">&nbsp;Elric<br>
+        <img class="img" src="img/3.jpg">
+        <button class="next" onclick="next(4)">Siguiente</button>
+        <div class="niveles">
+            NIVEL 1
+        </div>
+    </div>
+
+    <div class="container ">
+        4.¿Quien es el maestro de Naruto?
+        <hr>
+        <input type="radio" name="question4">&nbsp;Zabuza<br>
+        <input type="radio" name="question4" id="correct4">&nbsp;Kakashi<br>
+        <input type="radio" name="question4">&nbsp;Sasuke<br>
+        <input type="radio" name="question4">&nbsp;Asuma<br>
+        <img class="img" src="img/4.jpg">
+        <button class="next" onclick="next(5)">Siguiente</button>
+        <div class="niveles">
+            NIVEL 1
+        </div>
+    </div>
+
+    <div class="container ">
+        5.¿Cual es el nombre japones de Ash Ketchum?
+        <hr>
+        <input type="radio" name="question5">&nbsp;Shinji<br>
+        <input type="radio" name="question5">&nbsp;Yuji<br>
+        <input type="radio" name="question5" id="correct5">&nbsp;Sathosi<br>
+        <input type="radio" name="question5">&nbsp;Kira<br>
+        <img class="img" src="img/5.jpg">
+        <button class="next" onclick="next(6)" >Terminar nivel</button>
+        <div class="niveles">
+            NIVEL 1
+        </div>
+        <h1>Tuviste  :  <span id="result"></span> aciertos en este nivel </h1>
+    </div>
+
+    <div class="container ">
+        6.¿Cual es el nombre de el protagonista de Inuyasha?
+        <hr>
+        <input type="radio" name="question6" id="correct6">&nbsp;Kagome<br>
+        <input type="radio" name="question6">&nbsp;Nowu<br>
+        <input type="radio" name="question6">&nbsp;Shango<br>
+        <input type="radio" name="question6">&nbsp;Kilyo<br>
+        <img class="img" src="img/6.png">
+        <button class="next" onclick="next(7)">Siguiente</button>
+        <div class="niveles">
+            NIVEL 2
+        </div>
+    </div>
+
+    <div class="container ">
+        7.¿Como se llama el anime en el que el protagonista tiene el aspecto de un niño pero la inteligencia de un adulto?
+        <hr>
+        <input type="radio" name="question7" id="correct7">&nbsp;Detective Conan<br>
+        <input type="radio" name="question7">&nbsp;Koshikame<br>
+        <input type="radio" name="question7">&nbsp;Shingeki no Kyojin<br>
+        <input type="radio" name="question7">&nbsp;Arsene Lunpin<br>
+        <img class="img" src="img/7.jpg">
+        <button class="next" onclick="next(8)" >Siguiente</button>
+        <div class="niveles">
+            NIVEL 2
+        </div>
+    </div>
+
+    <div class="container ">
+        8.¿Cuantos hijos tiene la familia Kamado, contando a Tanjiro?
+        <hr>
+        <input type="radio" name="question8">&nbsp;5<br>
+        <input type="radio" name="question8" id="correct8">&nbsp;6<br>
+        <input type="radio" name="question8">&nbsp;7<br>
+        <input type="radio" name="question8">&nbsp;4<br>
+        <img class="img" src="img/8.jpg">
+        <button class="next" onclick="next(9)" >Siguiente</button>
+        <div class="niveles">
+            NIVEL 2
+        </div>
+    </div>
+
+    <div class="container ">
+        9.¿Cual es el nombre real de Mikey de Tokyo Revengers?
+        <hr>
+        <input type="radio" name="question9" id="correct9">&nbsp;Manjiro Sano<br>
+        <input type="radio" name="question9">&nbsp;Ken Ryugiji<br>
+        <input type="radio" name="question9">&nbsp;Ryota Osaka<br>
+        <input type="radio" name="question9">&nbsp;Waki Azumi<br>
+        <img class="img" src="img/9.jpg">
+        <button class="next" onclick="next(10)" >Siguiente</button>
+        <div class="niveles">
+            NIVEL 2
+        </div>
+    </div>
+
+    <div class="container ">
+        10.¿Cuantos humanos a matado Eren como humano?
+        <hr>
+        <input type="radio" name="question10">&nbsp;0<br>
+        <input type="radio" name="question10">&nbsp;2<br>
+        <input type="radio" name="question10" id="correct10">&nbsp;1<br>
+        <input type="radio" name="question10">&nbsp;3<br>
+        <img class="img" src="img/10.jpeg">
+        <button class="next" onclick="next(11)" >Siguiente /Pasar de nivel</button>
+        <div class="niveles">
+            NIVEL 2
+        </div>
+        <h1>Tuviste  :  <span id="result2"></span> aciertos en este nivel </h1>
+    </div>
+
+    <div class="container ">
+        11.¿Cuantos capitulos tiene One Piece?
+        <hr>
+        <input type="radio" name="question11" id="correct11">&nbsp;Mas de 1000<br>
+        <input type="radio" name="question11">&nbsp;Mas de 100<br>
+        <input type="radio" name="question11">&nbsp;Mas de 300<br>
+        <input type="radio" name="question11">&nbsp;Mas de 500<br>
+        <img class="img" src="img/11.jpg">
+        <button class="next" onclick="next(12)" >Siguiente</button>
+        <div class="niveles">
+            NIVEL 3
+        </div>
+    </div>
+
+    <div class="container ">
+        12.¿Como se llama la espada de Yoh Asakura?
+        <hr>
+        <input type="radio" name="question12">&nbsp;Banyru<br>
+        <input type="radio" name="question12">&nbsp;Mokuto<br>
+        <input type="radio" name="question12">&nbsp;Vizkyo<br>
+        <input type="radio" name="question12" id="correct12">&nbsp;Haru Same<br>
+        <img class="img" src="img/12.jpg">
+        <button class="next" onclick="next(13)" >Siguiente</button>
+        <div class="niveles">
+            NIVEL 3
+        </div>
+    </div>
+
+    <div class="container ">
+        13.¿Que elemento usaba el segundo Hokage?
+        <hr>
+        <input type="radio" name="question13">&nbsp;Viento<br>
+        <input type="radio" name="question13">&nbsp;Tierra<br>
+        <input type="radio" name="question13" id="correct13">&nbsp;Agua<br>
+        <input type="radio" name="question13">&nbsp;Fuego<br>
+        <img class="img" src="img/13.jpg">
+        <button class="next" onclick="next(14)" >Siguiente</button>
+        <div class="niveles">
+            NIVEL 3
+        </div>
+    </div>
+
+    <div class="container ">
+        14.¿Cual es la habilidad principal del Sharingan?
+        <hr>
+        <input type="radio" name="question14">&nbsp;Incrementa tu velocidad<br>
+        <input type="radio" name="question14" id="correct14">&nbsp;Copia las tecnias del enemigo<br>
+        <input type="radio" name="question14">&nbsp;Te permite usar ataques tipo electrico<br>
+        <input type="radio" name="question14">&nbsp;Te permite matar al enemigo de un golpe<br>
+        <img class="img" src="img/14.jpg">
+        <button class="next" onclick="next(15)" >Siguiente</button>
+        <div class="niveles">
+            NIVEL 3
+        </div>
+    </div>
+
+    <div class="container ">
+        15.Yugi del anime Yu-Gi-Oh, alguna vez perdio un duelo?
+        <hr>
+        <input type="radio" name="question15">&nbsp;Perdio 3 veces <br>
+        <input type="radio" name="question15" id="correct15">&nbsp;Perdio uno o mas duelos<br>
+        <input type="radio" name="question15">&nbsp;Perdio pero solo contra su abuelo<br>
+        <input type="radio" name="question15">&nbsp;Nunca perdio un duelo<br>
+        <img class="img" src="img/15.jpg">
+        <button class="next" onclick="next(16)" >Siguiente/Pasar de nivel</button>
+        <div class="niveles">
+            NIVEL 3
+        </div>
+        <h1>Tuviste  :  <span id="result3"></span> aciertos en este nivel </h1>
+    </div>
+
+    <div class="container ">
+        16.¿En cual de los siguientes animes el protagonista muere?
+        <hr>
+        <input type="radio" name="question16">&nbsp;Bellzebub <br>
+        <input type="radio" name="question16">&nbsp;Fairy tail<br>
+        <input type="radio" name="question16" id="correct16">&nbsp;Akame Ga Kill<br>
+        <input type="radio" name="question16">&nbsp;One Piece<br>
+        <img class="img" src="img/16.jpg">
+        <button class="next" onclick="next(17)" >Siguiente</button>
+        <div class="niveles">
+            NIVEL 4
+        </div>
+    </div>
+
+    <div class="container ">
+        17.¿En que año se publico el manga de Death Note?
+        <hr>
+        <input type="radio" name="question17">&nbsp;2000<br>
+        <input type="radio" name="question17">&nbsp;2004<br>
+        <input type="radio" name="question17" id="correct17">&nbsp;2003<br>
+        <input type="radio" name="question17">&nbsp;2007<br>
+        <img class="img" src="img/17.jpg">
+        <button class="next" onclick="next(18)" >Siguiente</button>
+        <div class="niveles">
+            NIVEL 4
+        </div>
+    </div>
+
+    <div class="container ">
+        18.¿Cómo se llama el chico de la imagen de 'Akagami no Shirayuki-hime'?
+        <hr>
+        <input type="radio" name="question18">&nbsp;Keb<br>
+        <input type="radio" name="question18">&nbsp;Zen<br>
+        <input type="radio" name="question18">&nbsp;Ren<br>
+        <input type="radio" name="question18" id="correct18">&nbsp;Obi<br>
+        <img class="img" src="img/18.png">
+        <button class="next" onclick="next(19)" >Siguiente</button>
+        <div class="niveles">
+            NIVEL 4
+        </div>
+    </div>
+
+    <div class="container ">
+        19.¿En 'Soul Eater', ¿cuál de estas no es una aunténtica Bruja?
+        <hr>
+        <input type="radio" name="question19" id="correct19">&nbsp;Blair<br>
+        <input type="radio" name="question19">&nbsp;Eruka<br>
+        <input type="radio" name="question19">&nbsp;Angela<br>
+        <input type="radio" name="question19">&nbsp;Arachne<br>
+        <img class="img" src="img/19.jpeg">
+        <button class="next" onclick="next(20)" >Siguiente</button>
+        <div class="niveles">
+            NIVEL 4
+        </div>
+    </div>
+
+    <div class="container ">
+        20.¿Quien es el mangaka de tokyo revengers?
+        <hr>
+        <input type="radio" name="question20">&nbsp;Takehiko Inoue<br>
+        <input type="radio" name="question20">&nbsp;Hirohiko Araki<br>
+        <input type="radio" name="question20">&nbsp;Hayao Miyazaki<br>
+        <input type="radio" name="question20" id="correct20">&nbsp;Ken Wakui<br>
+        <img class="img" src="img/20.jpg">
+        <button class="next" onclick="next(21)" >Terminar </button>
+        <div class="niveles">
+            NIVEL 4
+        </div>
+    </div>
+
+    <div class="container" id="win">
+        ¡Muy bien, terminaste, es hora de ver tus resultados!
+        <hr>
+         <ul>
+            <li>Si tus acierto son de 0 a 5, no sabes nada del tema</li>
+            <li>Si tus acierto son de 5 a 10, eres un Otaku promedio</li>
+            <li>Si tus acierto son de 10 a 15, eres un Otaku sensei</li>
+            <li>Si tus acierto son de 15 a 20, eres el Otaku maestro, ¡Felicidades!</li>
+        </ul>   
+        <h1>Tuviste  :  <span id="result4"></span> aciertos</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
