@@ -15,7 +15,7 @@ body{
     padding: 20px;
     display: none;
     margin: auto;
-    background-image: url(img/background2.jpg);
+    background-image: url(img/background2.jfif);
 }
 
 button {
@@ -38,12 +38,9 @@ button {
 .niveles{
     margin-left: 355px;
     margin-top: -30px;
-    
 }
 
-#jstext {
-    text-align: center;
-    font-size: 90px;
-
+button:hover{
+    background-color: green;
 }
 

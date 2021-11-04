@@ -12,6 +12,7 @@
             
             
             var score = 0;
+            
             if (document.getElementById('correct1').checked) {
                 score++;
             }   
@@ -72,6 +73,7 @@
             if (document.getElementById('correct20').checked) {
                 score++;
             }
+            
             if (score<=5) {
                 document.getElementById("dom").innerHTML = "Tuviste menos de 5 aciertos, realmente no sabes nada del tema, no sè ni para que realizaste la trivia.";
             }
@@ -84,6 +86,7 @@
             if (score>20) {
                 document.getElementById("dom").innerHTML = "Tuviste mas de 15 aciertos pero menos de 20 aciertos, te felicito, eres una persona experta en el tema Anime, lograste superar las preguntas mas dificiles y solucionarlas todas satisfacctoriamente, ¡Eres el maestro otaku! .";
             }
+
             document.getElementById("result").innerHTML = score;
             document.getElementById("result2").innerHTML = score;
             document.getElementById("result3").innerHTML = score;
